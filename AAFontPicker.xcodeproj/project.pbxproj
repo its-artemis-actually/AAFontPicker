@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1934C1E84FCC811EC372A618 /* Pods_AAFontPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A95D7E641237860A38F1FCB /* Pods_AAFontPicker.framework */; };
 		4A1F682A1F12CD9E0069D07C /* AAFontPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A1F68281F12CD9E0069D07C /* AAFontPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A1F68311F12CEB10069D07C /* FontPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1F68301F12CEB10069D07C /* FontPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A1F68251F12CD9E0069D07C /* AAFontPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AAFontPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A1F68281F12CD9E0069D07C /* AAFontPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAFontPicker.h; sourceTree = "<group>"; };
 		4A1F68291F12CD9E0069D07C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A1F68301F12CEB10069D07C /* FontPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontPicker.swift; sourceTree = "<group>"; };
+		4A95D7E641237860A38F1FCB /* Pods_AAFontPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AAFontPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B18C07E6392FD2CDEBCA8342 /* Pods-AAFontPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AAFontPicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AAFontPicker/Pods-AAFontPicker.debug.xcconfig"; sourceTree = "<group>"; };
+		C601060A19D38C6FEEB3E77E /* Pods-AAFontPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AAFontPicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-AAFontPicker/Pods-AAFontPicker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1934C1E84FCC811EC372A618 /* Pods_AAFontPicker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +39,8 @@
 			children = (
 				4A1F68271F12CD9E0069D07C /* AAFontPicker */,
 				4A1F68261F12CD9E0069D07C /* Products */,
+				ACB09483CC9BCA50198E9F0F /* Pods */,
+				90657D2F677C49ECBB4A3A54 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +55,28 @@
 		4A1F68271F12CD9E0069D07C /* AAFontPicker */ = {
 			isa = PBXGroup;
 			children = (
+				4A1F68301F12CEB10069D07C /* FontPicker.swift */,
 				4A1F68281F12CD9E0069D07C /* AAFontPicker.h */,
 				4A1F68291F12CD9E0069D07C /* Info.plist */,
 			);
 			path = AAFontPicker;
+			sourceTree = "<group>";
+		};
+		90657D2F677C49ECBB4A3A54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A95D7E641237860A38F1FCB /* Pods_AAFontPicker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACB09483CC9BCA50198E9F0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B18C07E6392FD2CDEBCA8342 /* Pods-AAFontPicker.debug.xcconfig */,
+				C601060A19D38C6FEEB3E77E /* Pods-AAFontPicker.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,10 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A1F682D1F12CD9E0069D07C /* Build configuration list for PBXNativeTarget "AAFontPicker" */;
 			buildPhases = (
+				A993C2C051ABFB58930B26F4 /* [CP] Check Pods Manifest.lock */,
 				4A1F68201F12CD9E0069D07C /* Sources */,
 				4A1F68211F12CD9E0069D07C /* Frameworks */,
 				4A1F68221F12CD9E0069D07C /* Headers */,
 				4A1F68231F12CD9E0069D07C /* Resources */,
+				892410C8D8BFAE42D1742263 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -95,6 +124,7 @@
 				TargetAttributes = {
 					4A1F68241F12CD9E0069D07C = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -126,11 +156,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		892410C8D8BFAE42D1742263 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AAFontPicker/Pods-AAFontPicker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A993C2C051ABFB58930B26F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4A1F68201F12CD9E0069D07C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A1F68311F12CEB10069D07C /* FontPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +304,9 @@
 		};
 		4A1F682E1F12CD9E0069D07C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B18C07E6392FD2CDEBCA8342 /* Pods-AAFontPicker.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -252,13 +318,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aa.AAFontPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		4A1F682F1F12CD9E0069D07C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C601060A19D38C6FEEB3E77E /* Pods-AAFontPicker.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -293,6 +362,7 @@
 				4A1F682F1F12CD9E0069D07C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

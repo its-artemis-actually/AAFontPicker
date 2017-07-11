@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0830"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4A1F68241F12CD9E0069D07C"
-               BuildableName = "AAFontPicker.framework"
-               BlueprintName = "AAFontPicker"
-               ReferencedContainer = "container:AAFontPicker.xcodeproj">
+               BlueprintIdentifier = "05E0EABB6795E2BE55BBCA7046B2A71D"
+               BuildableName = "Pods_AAFontPicker.framework"
+               BlueprintName = "Pods-AAFontPicker"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4A1F68241F12CD9E0069D07C"
-            BuildableName = "AAFontPicker.framework"
-            BlueprintName = "AAFontPicker"
-            ReferencedContainer = "container:AAFontPicker.xcodeproj">
+            BlueprintIdentifier = "05E0EABB6795E2BE55BBCA7046B2A71D"
+            BuildableName = "Pods_AAFontPicker.framework"
+            BlueprintName = "Pods-AAFontPicker"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -60,15 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4A1F68241F12CD9E0069D07C"
-            BuildableName = "AAFontPicker.framework"
-            BlueprintName = "AAFontPicker"
-            ReferencedContainer = "container:AAFontPicker.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
